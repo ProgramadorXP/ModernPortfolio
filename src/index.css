@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #0B0C10;      /* Rich dark blue for backgrounds */
+    --color-secondary: #66FCF1;    /* Soft orange for highlights/buttons */
+    --color-accent: #45A29E;       /* Bright blue for accents/icons */
+    --color-background: #1F2833;   /* Very light gray for sections */
+    --color-text: #C5C6C7;         /* Deep gray for text */
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+/* .particle-bg {
+  @apply fixed top-0 left-0 w-screen h-screen z-0 pointer-events-none;
+} */
