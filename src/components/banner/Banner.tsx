@@ -12,7 +12,7 @@ export default function Banner() {
         <img
           src={yoImage}
           alt="Profile"
-          className="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover shadow-lg border-4 border-accent transition-transform duration-300 hover:scale-105 hover:border-secondary"
+          className="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover shadow-lg border-4 border-secondary transition-transform duration-300 hover:scale-105"
         />
         <div className="text-center md:text-left flex flex-col gap-4">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-secondary">

@@ -29,7 +29,7 @@ const ParticleBanner = () => {
     () => ({
       background: {
         color: {
-          value: "#141414",
+          value: "#0B0C10",
         },
       },
       fpsLimit: 120,

@@ -11,7 +11,7 @@ const HamburgerButton = ({ isOpen, toggle }: HamburgerButtonProps) => (
     onClick={toggle}
     aria-expanded={isOpen}
     aria-label={isOpen ? "Close menu" : "Open menu"}
-    className="text-secondary z-50 flex h-12 w-12 flex-col items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-primary-500 md:hidden cursor-pointer"
+    className="text-secondary z-50 flex size-12 flex-col items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-primary-500 md:hidden cursor-pointer"
   >
     <span
       className={`hamburger-line ${
