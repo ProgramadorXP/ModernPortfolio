@@ -21,7 +21,7 @@ export default function Banner() {
           <p className="text-lg sm:text-xl md:text-2xl text-text font-medium">
             Focused on the <span className="text-secondary font-bold">PERN</span> stack (PostgreSQL, Express, React, Node.js).
           </p>
-          <div className="flex flex-col sm:flex-row items-center gap-4 mt-2">
+          <div className="flex flex-col sm:flex-row sm:justify-center md:justify-start items-center gap-4 mt-2">
             <a
               href={"/cv/CV.pdf"}
               target="_blank"

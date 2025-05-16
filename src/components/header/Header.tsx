@@ -14,9 +14,9 @@ export default function Header() {
   return (
     <header className={`sticky top-0 z-50 h-14 flex justify-between items-center px-4 transition-colors duration-300 ${scrolled ? "bg-primary shadow-lg" : "bg-transparent"}`}>
       {/** Looking for logo */}
-      <div>
-        <IoCodeSlash className="text-secondary size-12 p-2" />
-      </div>
+      <a href="/">
+        <IoCodeSlash className="text-secondary size-12" />
+      </a>
       <HamburgerMenu />
     </header>
   );
