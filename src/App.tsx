@@ -8,7 +8,7 @@ function App() {
       {/* Particle background */}
       <ParticleBanner />
       {/* Main content */}
-      <div className="w-full min-h-lvh relative z-10">
+      <div className="w-full max-w-5xl mx-auto min-h-lvh relative z-10">
         <Header />
         <Banner />
       </div>

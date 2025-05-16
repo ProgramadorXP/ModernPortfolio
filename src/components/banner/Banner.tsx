@@ -5,7 +5,7 @@ export default function Banner() {
   return (
     //Banner layer
     <div
-      className="relative -z-50 top-14 flex flex-col items-center justify-center w-full px-4 sm:px-0"
+      className="relative -z-50 flex flex-col items-center justify-center w-full px-4 sm:px-0"
       style={{ height: "calc(100vh - 56px)" }}
     >
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full max-w-4xl">
