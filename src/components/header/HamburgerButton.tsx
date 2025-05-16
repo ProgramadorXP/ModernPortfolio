@@ -39,7 +39,7 @@ const Menu = ({ isOpen, closeMenu }: MenuProps) => (
       isOpen ? "translate-x-0" : "-translate-x-full"
     }`}
   >
-    <ul className="mt-16 space-y-4 p-4 md:mt-0 md:flex md:space-y-0 md:space-x-6">
+    <ul className="mt-16 space-y-4 p-4 sm:px-0 md:mt-0 md:flex md:space-y-0 md:space-x-6">
       {["Home", "About me", "Projects", "Skills", "Contact me"].map(
         (item) => (
           <li key={item}>

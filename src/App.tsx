@@ -1,6 +1,7 @@
 import Banner from "./components/banner/Banner"
 import Header from "./components/header/Header"
 import ParticleBanner from "./components/banner/ParticleBanner"
+import AboutMe from "./components/AboutMe"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div className="w-full max-w-5xl mx-auto min-h-lvh relative z-10">
         <Header />
         <Banner />
+        <AboutMe />
       </div>
     </>
   )
