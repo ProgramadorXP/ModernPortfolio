@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { HamburgerMenu } from "./HamburgerButton";
+import HamburgerMenu from "./HamburgerMenu";
 import { IoCodeSlash } from "react-icons/io5";
 
 export default function Header() {
@@ -13,7 +13,6 @@ export default function Header() {
 
   return (
     <header className={`sticky top-0 z-50 h-14 flex justify-between items-center px-4 sm:px-0 transition-colors duration-300 ${scrolled ? "bg-primary shadow-lg" : "bg-transparent"}`}>
-      {/** Looking for logo */}
       <a href="/">
         <IoCodeSlash className="text-secondary size-12" />
       </a>
