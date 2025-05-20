@@ -2,6 +2,7 @@ import Banner from "./components/banner/Banner"
 import Header from "./components/header/Header"
 import ParticleBanner from "./components/banner/ParticleBanner"
 import AboutMe from "./components/AboutMe"
+import Projects from "./components/projects/Projects"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Banner />
         <AboutMe />
+        <Projects />
       </div>
     </>
   )
