@@ -26,7 +26,7 @@ export default function Projects() {
     <>
       <section
         ref={sectionRef}
-        id="about-me"
+        id="projects"
         className="p-2 sm:p-4"
         style={{ minHeight: "calc(100vh - 56px)" }}
       >

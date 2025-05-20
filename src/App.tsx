@@ -1,8 +1,8 @@
-import Banner from "./components/banner/Banner"
-import Header from "./components/header/Header"
-import ParticleBanner from "./components/banner/ParticleBanner"
-import AboutMe from "./components/AboutMe"
-import Projects from "./components/projects/Projects"
+import Banner from "./components/banner/Banner";
+import Header from "./components/header/Header";
+import ParticleBanner from "./components/banner/ParticleBanner";
+import AboutMe from "./components/AboutMe";
+import Projects from "./components/projects/Projects";
 
 function App() {
   return (
@@ -10,14 +10,17 @@ function App() {
       {/* Particle background */}
       <ParticleBanner />
       {/* Main content */}
-      <div className="w-full max-w-5xl mx-auto min-h-lvh relative z-10">
+      <div
+        id="home"
+        className="w-full max-w-5xl mx-auto min-h-lvh relative z-10"
+      >
         <Header />
         <Banner />
         <AboutMe />
         <Projects />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

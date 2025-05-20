@@ -32,6 +32,19 @@ type MenuProps = {
   closeMenu: () => void;
 };
 
+type Section = {
+  label: string;
+  id: string;
+};
+
+const sections: Section[] = [
+  { label: "Home", id: "home" },
+  { label: "About me", id: "about-me" },
+  { label: "Projects", id: "projects" },
+  { label: "Skills", id: "skills" },
+  { label: "Contact me", id: "contact-me" },
+];
+
 const Menu = ({ isOpen, closeMenu }: MenuProps) => (
   <nav
     aria-hidden={!isOpen}
@@ -40,19 +53,17 @@ const Menu = ({ isOpen, closeMenu }: MenuProps) => (
     }`}
   >
     <ul className="mt-16 space-y-4 p-4 sm:px-0 md:mt-0 md:flex md:space-y-0 md:space-x-6">
-      {["Home", "About me", "Projects", "Skills", "Contact me"].map(
-        (item) => (
-          <li key={item}>
-            <a
-              href="#"
-              onClick={closeMenu}
-              className="block font-bold rounded-md px-4 py-2 text-secondary hover:bg-zinc-800 md:px-2 md:py-1"
-            >
-              {item}
-            </a>
-          </li>
-        )
-      )}
+      {sections.map((item) => (
+        <li key={item.id}>
+          <a
+            href={`#${item.id}`}
+            onClick={closeMenu}
+            className="block font-bold rounded-md px-4 py-2 text-secondary hover:bg-zinc-800 md:px-2 md:py-1"
+          >
+            {item.label}
+          </a>
+        </li>
+      ))}
     </ul>
   </nav>
 );
