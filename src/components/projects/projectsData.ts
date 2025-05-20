@@ -4,6 +4,7 @@ export type Project = {
   image: string;
   url: string;
   github: string;
+  createdAt: string;
 };
 
 export const projects: Project[] = [
@@ -13,6 +14,7 @@ export const projects: Project[] = [
     image: "/projects/project-1.png",
     url: "https://json-placeholder-app.netlify.app/",
     github: "https://github.com/ProgramadorXP/JSON-Placeholder-API",
+    createdAt: "08-28-2024",
   },
   {
     title: "The CocktailDB",
@@ -20,6 +22,7 @@ export const projects: Project[] = [
     image: "/projects/project-2.png",
     url: "https://phenomenal-otter-9e4904.netlify.app/",
     github: "https://github.com/ProgramadorXP/bebidas-react-typescript",
+    createdAt: "05-15-2023",
   },
   {
     title: "Patient Control",
@@ -27,6 +30,7 @@ export const projects: Project[] = [
     image: "/projects/project-3.png",
     url: "https://pacientes-zustand.netlify.app/",
     github: "https://github.com/ProgramadorXP/pacientes-zustand",
+    createdAt: "12-08-2023",
   },
   {
     title: "GuitarLA",
@@ -34,6 +38,7 @@ export const projects: Project[] = [
     image: "/projects/project-4.png",
     url: "https://guitarlatsreducer.netlify.app/",
     github: "https://github.com/ProgramadorXP/guitarLA-TS",
+    createdAt: "06-01-2023",
   },
   // Agrega más proyectos aquí
 ];

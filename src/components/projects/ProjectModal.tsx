@@ -39,6 +39,16 @@ export default function ProjectModal({
               <Dialog.Title className="text-secondary text-xl font-bold mb-2">
                 {project.title}
               </Dialog.Title>
+              {project.createdAt && (
+                <p className="text-xs text-gray-400 mb-2">
+                  Created:{" "}
+                  {new Date(project.createdAt).toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </p>
+              )}
               <img
                 src={project.image}
                 alt={project.title}
