@@ -5,8 +5,8 @@ import { useInView } from "framer-motion";
 import { projects } from "./projectsData";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
-import { useAutoSlide } from "./useAutoSlide";
-import { useProjectModal } from "./useProjectModal";
+import { useAutoSlide } from "./hooks/useAutoSlide";
+import { useProjectModal } from "./hooks/useProjectModal";
 
 export default function Projects() {
   const swiperRef = useRef<SwiperRef | null>(null);
