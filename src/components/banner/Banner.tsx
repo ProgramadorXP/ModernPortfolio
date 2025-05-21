@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion, useInView } from "framer-motion";
-import yoImage from "../../assets/images/yo.jpeg";
+import yoImage from "../../assets/images/yo.webp";
 
 export default function Banner() {
   const sectionRef = useRef(null);
