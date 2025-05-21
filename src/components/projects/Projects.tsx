@@ -13,7 +13,7 @@ export default function Projects() {
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, {
     once: false,
-    margin: "-35% 0px -35% 0px",
+    amount: 0.5,
   });
 
   // Auto slide functionality

@@ -1,16 +1,33 @@
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+
 export default function AboutMe() {
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: false, amount: 0.5 });
+
   return (
     <>
       <section
         id="about-me"
+        ref={sectionRef}
         className="p-2 sm:p-4 flex flex-col justify-center"
         style={{ minHeight: "calc(100vh - 56px)" }}
       >
-        <h2 className="text-2xl sm:text-2xl md:text-3xl text-center text-secondary font-bold">
+        <motion.h2
+          className="text-2xl sm:text-2xl md:text-3xl text-center text-secondary font-bold"
+          initial={false}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
+          transition={{ duration: 0.7, type: "spring" }}
+        >
           About me
-        </h2>
+        </motion.h2>
         <div className="mt-14">
-          <p className="text-center text-lg">
+          <motion.p
+            className="text-center text-lg"
+            initial={false}
+            animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 40 }}
+            transition={{ duration: 0.8, delay: 0.2, type: "spring" }}
+          >
             I’m Jonhatan, a{" "}
             <span className="font-bold text-secondary">
               Full-Stack Developer
@@ -21,10 +38,10 @@ export default function AboutMe() {
               innovative solutions
             </span>
             . Specializing in{" "}
-            {["PostgreSQL", "Express", "React", "Node.js"].map((tech) => (
+            {["PostgreSQL", "Express", "React", "Node.js"].map((tech, idx, arr) => (
               <span className="font-bold" key={tech}>
                 {tech}
-                {", "}
+                {idx < arr.length - 1 ? ", " : ""}
               </span>
             ))}{" "}
             I build <span className="font-semibold text-accent">scalable</span>{" "}
@@ -42,26 +59,37 @@ export default function AboutMe() {
             </span>
             .
             <br />
-            Outside of coding, I enjoy{" "}
-            {[
-              ["🎮", "Gaming"],
-              ["📚", "Reading"],
-              ["🌍", "Traveling"],
-              ["🎶", "Music"],
-            ]
-              .map(([emoji, hobby]) => (
-                <span key={hobby}>
-                  {emoji} <span className="font-semibold">{hobby}</span>
-                  {", "}
-                </span>
-              ))
-              .slice(0, -1)}
-            .
+            <motion.span
+              className="block mt-4"
+              initial={false}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.7, delay: 0.5, type: "spring" }}
+            >
+              Outside of coding, I enjoy{" "}
+              {[
+                ["🎮", "Gaming"],
+                ["📚", "Reading"],
+                ["🌍", "Traveling"],
+                ["🎶", "Music"],
+              ]
+                .map(([emoji, hobby], idx, arr) => (
+                  <span key={hobby}>
+                    {emoji} <span className="font-semibold">{hobby}</span>
+                    {idx < arr.length - 1 ? ", " : ""}
+                  </span>
+                ))}
+              .
+            </motion.span>
             <br />
-            <span className="mt-10 block text-text font-bold">
+            <motion.span
+              className="mt-10 block text-text font-bold"
+              initial={false}
+              animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.7, delay: 0.7, type: "spring" }}
+            >
               Let’s connect and build the future!
-            </span>
-          </p>
+            </motion.span>
+          </motion.p>
         </div>
       </section>
       <div className="h-1 w-32 mx-auto bg-gradient-to-r from-accent via-secondary to-accent rounded-full" />
