@@ -3,7 +3,7 @@ import type { SwiperRef } from "swiper/react";
 
 export function useAutoSlide(
   swiperRef: RefObject<SwiperRef | null>,
-  delay = 4000
+  delay = 3000
 ) {
   const intervalRef = useRef<number | null>(null);
 
