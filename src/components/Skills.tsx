@@ -72,7 +72,7 @@ export default function Skills() {
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.2 }}
         >
           {skills.map((skill) => (
             <motion.div
