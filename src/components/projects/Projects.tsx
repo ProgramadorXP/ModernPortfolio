@@ -27,7 +27,7 @@ export default function Projects() {
       <section
         ref={sectionRef}
         id="projects"
-        className="p-2 sm:p-4"
+        className="py-16 px-4 sm:px-0"
         style={{ minHeight: "calc(100vh - 56px)" }}
       >
         <h2 className="text-2xl sm:text-2xl md:text-3xl text-center text-secondary font-bold">

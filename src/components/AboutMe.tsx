@@ -10,7 +10,7 @@ export default function AboutMe() {
       <section
         id="about-me"
         ref={sectionRef}
-        className="p-2 sm:p-4 flex flex-col justify-center"
+        className="py-16 px-4 sm:px-0 flex flex-col justify-center"
         style={{ minHeight: "calc(100vh - 56px)" }}
       >
         <motion.h2
